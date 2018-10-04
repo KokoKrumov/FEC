@@ -1,0 +1,6 @@
+.brand-line {
+  @extend .d-flex;
+  @extend .justify-content-between;
+  @extend .align-items-start;
+  position: relative;
+}

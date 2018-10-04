@@ -1,0 +1,43 @@
+/* ==========================================================================
+   General
+
+   This file is exclusively intended for setting up imports
+   Never add styles directly to this file
+   ========================================================================== */
+
+/* Base
+   ========================================================================== */
+
+
+
+/* Typography
+   ========================================================================== */
+@import "../../src/fonts/copperplateGothicBoldRegular/stylesheet.css";
+@import "../../src/js/slick/slick.css";
+@import "../../src/js/slick/slick-theme.css";
+
+@import "typography/typography";
+
+
+
+/* Positions
+   ========================================================================== */
+@import "positions/positions";
+
+/* Objects  - multiple objects/ one big component
+   ========================================================================== */
+@import "objects/titles",
+        "objects/decorations",
+        "objects/link",
+        "objects/menu-hamburger",
+        "objects/nav-vertical",
+        "objects/nav",
+        "objects/footer-nav",
+        "objects/carousel",
+        "objects/breadcrumb",
+        "objects/images",
+        "objects/card",
+        "objects/btn",
+        "objects/form",
+        "objects/sub-menu",
+        "objects/footer-col";

@@ -1,0 +1,23 @@
+/* ==========================================================================
+   Fonts
+
+   This file is exclusively intended for setting up variables
+   Never add styles directly to this file
+   ========================================================================== */
+
+.font-regular {
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-bold {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  @extend .font-regular;
+  @include font-size(12px);
+}

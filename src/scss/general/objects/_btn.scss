@@ -1,0 +1,36 @@
+.btn {
+  padding-right: 25px;
+  padding-left: 25px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #f5f5f5;
+  -webkit-box-shadow: 0 0 6px rgba(140, 140, 140, .85), inset 0 0 0 1px rgba(255, 255, 255, .1);
+  -moz-box-shadow: 0 0 6px rgba(140, 140, 140, .85), inset 0 0 0 1px rgba(255, 255, 255, .1);
+  box-shadow: 0 0 6px rgba(140, 140, 140, .85), inset 0 0 0 1px rgba(255, 255, 255, .1);
+  @include font-size(11px);
+}
+
+.btn-primary:focus, .btn-primary.focus,
+.btn-primary:active, .btn-primary.active,
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: none;
+}
+
+.btn-primary,
+.btn-primary:hover:focus,
+.btn-primary:hover:active  {
+  background-image: -webkit-linear-gradient(bottom, #000d14, #008ad8);
+  background-image: -moz-linear-gradient(bottom, #000d14, #008ad8);
+  background-image: -o-linear-gradient(bottom, #000d14, #008ad8);
+  background-image: -ms-linear-gradient(bottom, #000d14, #008ad8);
+  background-image: linear-gradient(to top, #000d14, #008ad8);
+}
+
+.btn-primary:hover {
+  background-image: -webkit-linear-gradient(bottom, #008ad8, #000d14);
+  background-image: -moz-linear-gradient(bottom, #008ad8, #000d14);
+  background-image: -o-linear-gradient(bottom, #008ad8, #000d14);
+  background-image: -ms-linear-gradient(bottom, #008ad8, #000d14);
+  background-image: linear-gradient(to top, #008ad8, #000d14);
+}

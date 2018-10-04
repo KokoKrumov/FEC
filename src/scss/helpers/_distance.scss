@@ -1,0 +1,57 @@
+.mt-80 {
+  @include margin(80px, null, null, null);
+}
+
+.pt-80 {
+  @include padding(80px, null, null, null);
+}
+
+.pt-md-80 {
+  @include media-breakpoint-up(md) {
+    padding-top: 80px !important;
+  }
+}
+
+.mb-80 {
+  @include padding(null, null, 80px, null);
+}
+
+.mb-sm-down-80 {
+  @include media-breakpoint-down(sm) {
+    @include padding(null, null, 80px, null);
+  }
+}
+
+.mt-sm-110 {
+  @include media-breakpoint-down(sm) {
+    @include margin(110px, null, null, null);
+  }
+}
+
+.mt-sm-50 {
+  @include media-breakpoint-down(sm) {
+    @include margin(50px, null, null, null);
+  }
+}
+
+.pt-sm-50 {
+  @include media-breakpoint-down(sm) {
+    @include padding(50px, null, null, null);
+  }
+}
+
+.mx-md--13 {
+  @include media-breakpoint-up(md) {
+    @include margin(null,-13px, null,-13px);
+  }
+}
+.mx-sm--15 {
+  @include media-breakpoint-up(sm) {
+    @include margin(null,-15px, null,-15px);
+  }
+}
+.pr-md--100 {
+  @include media-breakpoint-up(md) {
+    @include padding(null, 100px, null,null);
+  }
+}

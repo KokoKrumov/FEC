@@ -1,0 +1,12 @@
+.brand {
+  padding: 25px 10px;
+  @include media-breakpoint-up(sm) {
+    padding: 25px 20px;
+  }
+
+  h1{
+    font-family: 'copperplate_gothic_boldRg', sans-serif;
+    @include font-size(18px);
+    color: #131336;
+  }
+}

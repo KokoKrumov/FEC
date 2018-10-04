@@ -1,0 +1,89 @@
+.underline {
+  text-decoration: none;
+  position: relative;
+}
+
+.underline:after {
+  position: absolute;
+  content: '';
+  height: 2px;
+  /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
+  bottom: 0;
+
+  /******
+  optional values below
+  ******/
+
+  /* center - (optional) use with adjusting width   */
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 0%;
+  background: #43a5d4;
+
+  /* optional animation */
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+/* optional hover classes used with anmiation */
+.underline:hover:after {
+  width: 100%;
+}
+
+.box-shadow--md {
+  -webkit-box-shadow: 0 0 10px rgba(142, 142, 142, .75);
+  -moz-box-shadow: 0 0 10px rgba(142, 142, 142, .75);
+  box-shadow: 0 0 10px rgba(142, 142, 142, .75)
+}
+
+.link__icon {
+  margin-right: 8px;
+  -webkit-box-shadow: 0 2px 2px rgba(140, 140, 140, .36), inset 0 0 5px rgba(255, 255, 190, .2);
+  -moz-box-shadow: 0 2px 2px rgba(140, 140, 140, .36), inset 0 0 5px rgba(255, 255, 190, .2);
+  box-shadow: 0 2px 2px rgba(140, 140, 140, .36), inset 0 0 5px rgba(255, 255, 190, .2);
+  border: solid 1px #1c58a1;
+  background-image: -webkit-linear-gradient(119deg,#0088d4, #000e16);
+  background-image: -moz-linear-gradient(119deg,#0088d4, #000e16);
+  background-image: -o-linear-gradient(119deg,#0088d4, #000e16);
+  background-image: -ms-linear-gradient(119deg,#0088d4, #000e16);
+  background-image: linear-gradient(119deg,#0088d4, #000e16);
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
+  display: inline-block;
+  border-radius: 50%;
+  @extend .flex-center;
+
+  &__arrow {
+    color: $color-white;
+    font-size: 16px;
+    line-height: 1;
+    margin-bottom: 3px;
+    margin-left: 1px;
+  }
+}
+
+.rotate-arrow {
+  transform: rotate(90deg);
+  margin-top: 4px;
+  margin-left: 4px;
+}
+
+.submenu-gradient {
+  background-image: -webkit-linear-gradient(top, #fff, #e3e3e3);
+  background-image: -moz-linear-gradient(top, #fff, #e3e3e3);
+  background-image: -o-linear-gradient(top, #fff, #e3e3e3);
+  background-image: -ms-linear-gradient(top, #fff, #e3e3e3);
+  background-image: linear-gradient(to bottom, #fff, #e3e3e3);
+}
+
+.submenu-link-shadow {
+  -webkit-box-shadow: 0 2px 5px rgba(140, 140, 140, .28);
+  -moz-box-shadow: 0 2px 5px rgba(140, 140, 140, .28);
+  box-shadow: 0 2px 5px rgba(140, 140, 140, .28);
+  border: solid 1px #d6d6d6;
+}

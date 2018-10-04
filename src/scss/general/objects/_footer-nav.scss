@@ -1,0 +1,45 @@
+.footer, .footer .link {
+  color: $color-light;
+}
+
+.footer_nav {
+  @extend .d-flex;
+  @extend .justify-content-center;
+  @extend .flex-wrap;
+  padding-top: 5px;
+  padding-bottom: 25px;
+
+  @include media-breakpoint-down(sm) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+
+  .link {
+    @extend .d-block;
+  }
+
+  p, .link {
+    padding: 10px;
+    @include font-size(11px);
+    position: relative;
+    @include media-breakpoint-down(sm) {
+      padding: 0 10px;
+    }
+  }
+
+  li:not(:last-child) {
+    p, .link {
+      &::after {
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 2px;
+        background-color: $color-light;
+        top: 50%;
+        right: 0;
+        transform: translateY(-40%);
+      }
+    }
+  }
+}
